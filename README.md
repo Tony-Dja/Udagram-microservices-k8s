@@ -1,2 +1,2 @@
 # Udagram-microservices-k8s
-Re-actorisation d'une application Monolithic "Udagram" en Micro-services.
+Re-factorisation d'une application Monolithic "Udagram" en Micro-services.
