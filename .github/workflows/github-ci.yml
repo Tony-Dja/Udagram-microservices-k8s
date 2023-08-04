@@ -18,6 +18,11 @@ jobs:
     # Checkout du repo
     - name: Checkout App Code
       uses: actions/checkout@v3
+    
+    - name: Setup Node
+      uses: actions/setup-node@v3
+    - run: npm ci
+    - run: npm test
 
     # Login to DockerHub
     - name: Login to Docker Hub
@@ -30,7 +35,15 @@ jobs:
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v2
     
-    # Build & Push api-frontend
+    # Build & Push frontend
+    - name: Build and push frontend
+      uses: docker/build-push-action@v4
+      with:
+        file: ./udagram-frontend/Dockerfile
+        push: true
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/udagram-frontend:latest
+    
+    # Build & Push api-feed
     - name: Build and push api-frontend
       uses: docker/build-push-action@v4
       with:
