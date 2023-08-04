@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN install npm
+RUN sudo apt install npm
 RUN npm ci
 
 COPY . .
