@@ -1,0 +1,19 @@
+# CI/CD UDAGRAM => Build & Push to DockerHub
+
+name: Udagram > CI/CD > Github Actions
+# Trigger
+on:
+  # Push ou Pull Request on @main
+  push:
+    branches: [ main ] 
+  pull_request:
+    branches: [ main ]
+
+# Start Jobs
+jobs:
+  configuration: # Environnement config
+    runs-on: ubuntu-latest
+    steps:
+    # Checkout du repo
+    - name: Checkout App Code
+      uses: actions/checkout@v3
