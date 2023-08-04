@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 RUN pwd
 RUN ls
 
-COPY package*.json /usr/src/app/
+COPY ./udagram-frontend/package*.json ./
 
 RUN pwd
 RUN ls
