@@ -5,12 +5,7 @@
 export const environment = {
   production: false,
   appName: 'Udagram',
-  
-  // Use with exposed service in k8s
-  apiHost: 'http://a5e815f53e1024b29a4d1a1194801328-1520737549.us-east-2.elb.amazonaws.com:8080/api/v0',
-  
-  // Use locally
-  // apiHost: 'http://localhost:8080/api/v0'
+  apiHost: 'http://localhost:8080/api/v0'
 };
 
 /*
