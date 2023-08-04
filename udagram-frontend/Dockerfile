@@ -2,13 +2,8 @@ FROM beevelop/ionic:latest AS ionic
 
 WORKDIR /usr/src/app
 
-RUN pwd
-RUN ls
+COPY package*.json ./
 
-COPY ./udagram-frontend/package*.json ./
-
-RUN pwd
-RUN ls
 RUN npm --verbose ci
 
 COPY . .
