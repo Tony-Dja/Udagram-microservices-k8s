@@ -2,11 +2,14 @@ FROM beevelop/ionic:latest AS ionic
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+RUN pwd
+RUN ls
+
+COPY package*.json /usr/src/app/
 
 RUN pwd
 RUN ls
-RUN npm ci
+RUN npm --verbose ci
 
 COPY . .
 RUN ionic build
