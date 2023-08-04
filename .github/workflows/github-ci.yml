@@ -37,6 +37,14 @@ jobs:
         context: ./udagram-frontend
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/udagram-frontend:latest
+
+    # Build & Push reverseproxy
+    - name: Build and push reverseproxy
+      uses: docker/build-push-action@v4
+      with:
+        context: ./udagram-reverseproxy
+        push: true
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/udagram-reverseproxy:latest
     
     # Build & Push api-feed
     - name: Build and push api-feed
@@ -45,3 +53,11 @@ jobs:
         context: ./udagram-api-feed
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/udagram-api-feed:latest
+
+    # Build & Push api-user
+    - name: Build and push api-user
+      uses: docker/build-push-action@v4
+      with:
+        context: ./udagram-api-user
+        push: true
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/udagram-api-user:latest

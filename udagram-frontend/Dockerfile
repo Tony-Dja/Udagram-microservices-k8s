@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 
 COPY package*.json ./
 
-RUN npm --verbose ci
+RUN npm ci
 
 COPY . .
 RUN ionic build
