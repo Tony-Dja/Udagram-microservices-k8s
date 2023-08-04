@@ -34,7 +34,6 @@ jobs:
     - name: Build and push api-frontend
       uses: docker/build-push-action@v4
       with:
-        context: ../../udagram-frontend
-        file: ./Dockerfile
+        file: ./udagram-frontend/Dockerfile
         push: true
         tags: ${{ secrets.DOCKERHUB_USERNAME }}/udagram-frontend:latest
