@@ -4,8 +4,8 @@ name: Udagram > CI/CD > Github Actions
 # Trigger
 on:
   # Push ou Pull Request on @main
-  push:
-    branches: [ main ] 
+  #push:
+  #  branches: [ main ] 
   pull_request:
     branches: [ main ]
 
