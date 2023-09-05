@@ -3,7 +3,7 @@ Factorisation d'une application Monolithic "Udagram" en version Micro-services e
 
 ![example workflow](https://github.com/Tony-Dja/Udagram-microservices-k8s/actions/workflows/github-ci.yml/badge.svg) [![npm version](https://badge.fury.io/js/node.svg)](https://badge.fury.io/js/node)
 
-![Static Badge](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white) ![Static Badge](https://img.shields.io/badge/kubernetes-326ce5.svg?&style=for-the-badge&logo=kubernetes&logoColor=white) ![Static Badge](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white) 
+![Static Badge](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white) ![Static Badge](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white) ![Static Badge](https://img.shields.io/badge/kubernetes-326ce5.svg?&style=for-the-badge&logo=kubernetes&logoColor=white) ![Static Badge](https://img.shields.io/badge/Amazon_AWS-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white) 
 
 Frontend
 
